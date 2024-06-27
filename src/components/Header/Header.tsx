@@ -1,5 +1,5 @@
-import React from 'react';
-import { Nav, NavItem, NavLink, Title } from './Header';
+import React from "react";
+import { Nav, NavItem, NavLink, Title } from "./styles";
 
 const Header: React.FC = () => {
   return (
@@ -31,4 +31,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-

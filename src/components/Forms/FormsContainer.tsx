@@ -1,5 +1,5 @@
-import React from 'react';
-import { FormWrapper, FormTitle, Label, Input } from './FormsContainer';
+import React from "react";
+import { FormWrapper, FormTitle, Label, Input } from "./styles";
 
 interface FormContainerProps {
   title: string;
@@ -7,7 +7,11 @@ interface FormContainerProps {
   children: React.ReactNode;
 }
 
-const FormContainer: React.FC<FormContainerProps> = ({ title, onSubmit, children }) => {
+const FormContainer: React.FC<FormContainerProps> = ({
+  title,
+  onSubmit,
+  children,
+}) => {
   return (
     <FormWrapper onSubmit={onSubmit}>
       <FormTitle>{title}</FormTitle>

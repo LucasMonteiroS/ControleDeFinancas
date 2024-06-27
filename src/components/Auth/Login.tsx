@@ -1,8 +1,8 @@
 // src/pages/Login.tsx
-import React from 'react';
-import { useAuth } from '../../contexts/AuthContext';
-import { useNavigate } from 'react-router-dom';
-import { Container, Button } from './Login';
+import React from "react";
+import { useAuth } from "../../contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
+import { Container, Button } from "./styles";
 
 const Login: React.FC = () => {
   const { loginWithGoogle } = useAuth();
@@ -10,7 +10,7 @@ const Login: React.FC = () => {
 
   const handleLogin = async () => {
     await loginWithGoogle();
-    navigate('/Home');
+    navigate("/Home");
   };
 
   return (
